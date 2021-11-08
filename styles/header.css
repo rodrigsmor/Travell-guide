@@ -1,0 +1,68 @@
+:root {
+    --primary: #724A88;
+    --primaryVariant: #AB78AF;
+    --secondary: #57A9EB;
+    --background: #ffffff;
+    --surface: #FFADC2;
+    --contrast: #FF4772;
+    --font: #520014;
+
+    --surfaceLight: #57a8eb1e;
+
+    --titles: 'Zen Antique', Georgia, serif;
+    --text: 'Montserrat', Helvetica, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    position: fixed;
+    color: var(--font);
+    align-items: center;
+    font-family: var(--titles);
+    justify-content: space-evenly;
+}
+
+header h1 {
+    display: flex;
+    color: var(--primary);
+    align-items: center;
+}
+
+header h1 span {
+    color: var(--secondary);
+}
+
+header nav {
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+header nav ul {
+    gap: 5px;
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+header ul li a {
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--primary);
+    font-family: var(--text);    
+    transition: .5s linear;
+}
+
+header ul li a:hover {
+    background: var(--surfaceLight);
+}
