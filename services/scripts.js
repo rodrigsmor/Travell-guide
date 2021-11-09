@@ -3,3 +3,14 @@ window.addEventListener("scroll", () => {
 
     header.classList.toggle("fixed", window.scrollY > 100);
 });
+
+var buttonDropdown = document.querySelector(".dropdown_button");
+var blockDropdown = document.querySelector(".dropdown_members");
+
+buttonDropdown.addEventListener("mouseover", () => {
+    blockDropdown.classList.toggle('visible');
+});
+
+buttonDropdown.addEventListener("mouseout", () => {
+    blockDropdown.classList.toggle('visible');
+});

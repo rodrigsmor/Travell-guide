@@ -180,3 +180,21 @@ figure.figure3 div {
 .tourism_redirect button:hover i {
     color: var(--secondary);
 }
+
+/* ---------- credits --------- */
+
+.credits {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.credits h6 {
+    font-size: 15px;
+}
+
+.credits span {
+    font-size: 20px;
+}

@@ -116,5 +116,15 @@ footer .about {
 }
 
 .about cite {
+    gap: 30px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
     color: var(--background);
+}
+
+footer h6 {
+    font-family: var(--text);
+    color: var(--backgroundOpacity);
+    font-size: 10pt;
 }

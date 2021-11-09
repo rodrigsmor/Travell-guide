@@ -138,3 +138,28 @@ main {
 .redirect-button:hover button::after {
     width: 100%;
 }
+
+.social_medias {
+    display: flex;
+    bottom: 5rem;
+    left: 5rem;
+    gap: 25px;
+    align-items: center;
+    position: absolute;
+}
+
+.social_medias i {
+    font-size: 15pt;
+    cursor: pointer;
+    color: var(--background);
+}
+
+.social_medias::after {
+    content: '';
+    right: -180px;
+    height: 1px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    background: var(--backgroundOpacity);
+}
