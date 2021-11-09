@@ -1,0 +1,140 @@
+:root {
+    --primary: #100e34;
+    --secondary: #551cc0;
+    --background: #ffffff;
+    --surface: #bfbcff;
+
+    --primaryLight: #1f1a77;
+    --secondaryLight: #6c27eb;
+    --backgroundOpacity: rgba(255, 255, 255, 0.3);
+    
+    --text: 'Roboto', Helvetica, sans-serif;
+    --titles: 'Playfair Display', Georgia, serif;
+}
+
+main {
+    width: 100vw;
+    height: fit-content;
+    background: var(--background);
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.home::after {
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: #04041385;
+    position: absolute;
+}
+
+.home img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.home div, 
+.home address, 
+.home a {
+    z-index: 1;
+}
+
+.scroll-down {
+    bottom: 10%;
+    position: absolute;
+}
+
+.scroll-down button {
+    outline: none;
+    background: transparent;
+    border: 0px solid transparent;
+}
+
+.scroll-down button i {
+    font-size: 50pt;
+    transition: .5s ease;
+    color: var(--background);
+}
+
+.scroll-down:hover button i {
+    transform: scale(1.5);
+}
+
+.infos {
+    display: grid;
+    place-items: center;
+}
+
+.infos span {
+    width: 80%;
+    height: 1px;
+    background: var(--backgroundOpacity);
+}
+
+.infos h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+    color: var(--background);
+}
+
+.infos h3 {
+    font-weight: 200;
+    line-height: 50px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    color: var(--background);
+}
+
+.redirect-button {
+    right: 5rem;
+    bottom: 5rem;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+
+.redirect-button::before {
+    content: '';
+    left: -180px;
+    height: 1px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    background: var(--backgroundOpacity);
+}
+
+.redirect-button button {
+    font-size: 15pt;
+    position: relative;
+    color: var(--background);
+    background: transparent;
+    font-family: var(--text);
+    border: solid 0px transparent;
+}
+
+.redirect-button button::after {
+    content: '';
+    height: 1px;
+    width: 0;
+    margin: 5px 0 0;
+    display: block;
+    position: absolute;
+    transition: .5s linear;
+    background: var(--background);
+}
+
+.redirect-button:hover button::after {
+    width: 100%;
+}

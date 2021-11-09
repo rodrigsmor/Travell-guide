@@ -1,96 +1,37 @@
 :root {
-    --primary: #724A88;
-    --primaryVariant: #AB78AF;
-    --secondary: #57A9EB;
+    --primary: #100e34;
+    --secondary: #551cc0;
     --background: #ffffff;
-    --surface: #FFADC2;
-    --contrast: #FF4772;
-    --font: #520014;
+    --surface: #bfbcff;
 
-    --surfaceLight: #57a8eb1e;
+    --primaryLight: #1f1a77;
+    --secondaryLight: #6c27eb;
 
-    --titles: 'Zen Antique', Georgia, serif;
-    --text: 'Montserrat', Helvetica, sans-serif;
+    --text: 'Roboto', Helvetica, sans-serif;
+    --titles: 'Playfair Display', Georgia, serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: var(--font);
+    color: var(--primary);
     box-sizing: border-box;
 }
 
 body {
     width: 100vw;
-    height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
+    height: fit-content;
     font-family: var(--text);
     background: var(--background);
 }
 
 button {
     cursor: pointer;
-}
-
-.btn {
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 10px 25px;
-    border-radius: 15px;
-    transition: .5s linear;
-    color: var(--background);
     font-family: var(--text);
-    background: var(--primary);
-    border: 0px solid transparent;
 }
 
-.btn:hover {
-    background: var(--primaryVariant);
-}
-
-/* footer */
-
-footer {
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    padding: 3em 4em;
-    position: absolute;
-    align-items: center;
-    flex-direction: column;
-    background: var(--primaryVariant)
-}
-
-footer form {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.input_container {
-    width: 350px;
-    display: flex;
-    border-radius: 15px;
-    align-items: center;
-    padding: 5px 5px 5px 10px;
-    background: var(--background);
-    justify-content: space-between;
-}
-
-footer form label {
-    font-size: 20pt;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: var(--background);
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--titles);
-}
-
-footer form input {
-    outline: none;
-    width: 200px;
-    font-size: 15px;
-    border: 0px solid transparent;
 }

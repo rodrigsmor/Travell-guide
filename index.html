@@ -2,53 +2,74 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>PeruTravell - Home</title>
+        <title>Peru - Home</title>
+        <link href="styles/main.css" rel="stylesheet"/>
         <link href="styles/header.css" rel="stylesheet"/>
+        <link href="styles/article.css" rel="stylesheet"/>
         <link href="styles/globalStyled.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Antique&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
         <header>
-            <h1>
-                Peru
-                <span>Travell</span>
-            </h1>
+            <div>
+                <img
+                    src="images/logo.svg"
+                    alt="logo do Peru"
+                />
+                <h1>Peru</h1>
+            </div>
 
             <nav>
                 <ul>
-                    <li><a href="#">Home page</a></li>
-                    <li><a href="#">History/Culture</a></li>
-                    <li><a href="#">Tourism</a></li>
-                    <li><a href="#">Curiosities</a></li>
+                    <li class="selected"><a href="">Home page</a></li>
+                    <li><a href="">History & Culture</a></li>
+                    <li><a href="">Tourism</a></li>
+                    <li><a href="">Curiosities</a></li>
                 </ul>
 
-                <a href="#footer">
-                    <button class="btn">subscribe</button>
-                </a>
+                <a href="#footer"><button class="button">subscribe</button></a>
             </nav>
         </header>
 
         <main>
+            <section class="home">
+                <img src="images/background_home.jpg" alt="imagem de apresentação" />
+            
+                <div class="infos">
+                    <h1>PERU</h1>
+                    <span></span>
+                    <h3>a mystical and ancient place</h3>
+                </div>
 
+                <address class="social_medias">
+                    
+                </address>
+
+                <a class="redirect-button">
+                    <button class="attractions_button">
+                        View tourist attractions
+                    </button>
+                </a>
+
+                <a href="#article" class="scroll-down">
+                    <button>
+                        <i class='bx bx-chevron-down'></i>
+                    </button>
+                </a>
+            </section>
+
+            <article id="article">
+                <h2>About Peru</h2>
+            </article>
         </main>
 
         <footer id="footer">
-            <form method="">
-                <label for="email">Subscribe to our Newsletter</label>
-
-                <div class="input_container">
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="type your best email address..."
-                    />
-                    <button class="btn">subscribe</button>
-                </div>
-            </form>
+            
         </footer>
     </body>
 </html>

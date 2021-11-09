@@ -1,41 +1,55 @@
 :root {
-    --primary: #724A88;
-    --primaryVariant: #AB78AF;
-    --secondary: #57A9EB;
+    --primary: #100e34;
+    --secondary: #551cc0;
     --background: #ffffff;
-    --surface: #FFADC2;
-    --contrast: #FF4772;
-    --font: #520014;
+    --surface: #bfbcff;
 
-    --surfaceLight: #57a8eb1e;
+    --primaryLight: #1f1a77;
+    --secondaryLight: #6c27eb;
 
-    --titles: 'Zen Antique', Georgia, serif;
-    --text: 'Montserrat', Helvetica, sans-serif;
+    --text: 'Roboto', Helvetica, sans-serif;
+    --titles: 'Playfair Display', Georgia, serif;
 }
 
 header {
-    width: 100vw;
-    height: 4rem;
+    z-index: 1;
+    width: 100%;
+    height: 7rem;
     display: flex;
+    padding: 0 5%;
     position: fixed;
-    color: var(--font);
     align-items: center;
-    font-family: var(--titles);
-    justify-content: space-evenly;
+    transition: .5s linear;
+    background: transparent;
+    justify-content: space-between;
 }
 
-header h1 {
+header.fixed {
+    height: 5rem;
+    padding: 0 8%;
+    background: var(--primary);
+}
+
+header div {
+    gap: 5px;
+    height: 100%;
     display: flex;
-    color: var(--primary);
     align-items: center;
 }
 
-header h1 span {
-    color: var(--secondary);
+header div img {
+    height: 80%;
+    width: auto;
+}
+
+header div h1 {
+    font-size: 3rem;
+    color: var(--background);
+    font-family: var(--titles);
 }
 
 header nav {
-    gap: 20px;
+    gap: 50px;
     height: 100%;
     display: flex;
     width: fit-content;
@@ -43,26 +57,52 @@ header nav {
 }
 
 header nav ul {
-    gap: 5px;
+    gap: 10px;
     display: flex;
     list-style: none;
 }
 
-header ul li {
+header nav ul li {
+    display: flex;
     cursor: pointer;
     padding: 5px 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
-header ul li a {
-    font-weight: 600;
-    padding: 10px 15px;
-    border-radius: 15px;
+header nav ul li::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    bottom: 0;
+    position: absolute;
+    transition: .5s ease-in-out;
+    background: var(--background);
+}
+
+header nav ul li:hover::after,
+header nav ul li.selected::after {
+    width: 50%;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: var(--primary);
-    font-family: var(--text);    
-    transition: .5s linear;
+    color: var(--background);
 }
 
-header ul li a:hover {
-    background: var(--surfaceLight);
+.button {
+    outline: none;
+    font-family: 18px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    transition: .5s linear;
+    color: var(--background);
+    background: transparent;
+    border: 1px solid var(--background);
+}
+
+.button:hover {
+    color: var(--primary);
+    background: var(--background);
 }
