@@ -6,7 +6,8 @@
 
     --primaryLight: #1f1a77;
     --secondaryLight: #6c27eb;
-
+    --backgroundOpacity: rgba(255, 255, 255, 0.3);
+    
     --text: 'Roboto', Helvetica, sans-serif;
     --titles: 'Playfair Display', Georgia, serif;
 }

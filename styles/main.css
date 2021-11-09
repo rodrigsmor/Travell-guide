@@ -71,24 +71,24 @@ main {
     transform: scale(1.5);
 }
 
-.infos {
+.title-wrapper {
     display: grid;
     place-items: center;
 }
 
-.infos span {
+.title-wrapper span {
     width: 80%;
     height: 1px;
     background: var(--backgroundOpacity);
 }
 
-.infos h1 {
+.title-wrapper h1 {
     font-size: 6rem;
     line-height: 7rem;
     color: var(--background);
 }
 
-.infos h3 {
+.title-wrapper h3 {
     font-weight: 200;
     line-height: 50px;
     word-spacing: 10px;
