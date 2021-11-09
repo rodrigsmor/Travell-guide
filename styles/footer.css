@@ -86,7 +86,7 @@ footer .newsletter form span {
     background: var(--secondaryLight);
 }
 
-footer .socialMedias {
+footer .about {
     width: 100%;
     display: flex;
     padding: 1rem 0;
@@ -115,6 +115,6 @@ footer .socialMedias {
     font-family: var(--titles);
 }
 
-.socialMedias cite {
+.about cite {
     color: var(--background);
 }
