@@ -14,3 +14,9 @@ buttonDropdown.addEventListener("mouseover", () => {
 buttonDropdown.addEventListener("mouseout", () => {
     blockDropdown.classList.toggle('visible');
 });
+
+var logo = document.querySelector(".logo");
+
+logo.addEventListener("click", () => {
+    window.location.href = "../../index.html";
+});
