@@ -1,0 +1,58 @@
+:root {
+    --primary: #100e34;
+    --secondary: #551cc0;
+    --background: #ffffff;
+    --surface: #bfbcff;
+
+    --primaryLight: #1f1a77;
+    --secondaryLight: #6c27eb;
+    --backgroundOpacity: rgba(255, 255, 255, 0.3);
+    
+    --text: 'Roboto', Helvetica, sans-serif;
+    --titles: 'Playfair Display', Georgia, serif;
+}
+
+article {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, fit-content);
+}
+
+#article h2:nth-of-type(2)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px; 
+    width: 5%;
+    height: 2px;
+    background: var(--primary);
+}
+
+.paragraph:first-of-type {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.illustration:first-of-type {
+    display: flex;
+    grid-row: 2/3;
+    margin: -3em 0 0;
+    overflow: hidden;
+    grid-column: 1/4;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration:first-of-type div {
+    height: 300px !important;
+    width: fit-content;
+}
+
+.illustration:first-of-type div img {
+    height: 300px;
+    width: auto;
+}
+
+article h2 {
+    grid-column: 1/4;
+}
